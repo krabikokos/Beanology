@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Меню</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+          <header>
+            <ul>
+                <li><a href="index.html" class="btn">Главная</a></li>
+                <li><a href="menu.html" class="btn">Меню</a></li>
+                <li><a href="about.html" class="btn"> О нас</a></li>
+                <li><a href="contact.html" class="btn">Контакты</a></li>
+            </ul>
+            <h1> Beanology - Исскуство кофе </h1>
+            <p> Наслаждайся вкусом, ароматом и уютом в каждой чашке. Добро пожаловать в Beanology — место, где кофе становится магией. </p>
+            <a href="menu.html" class="btn">Посмотреть меню</a>
+        </header>
+          <div class="menu-container">
+
+            <div class="coffeeCard">
+            <img src="https://www.shutterstock.com/image-photo/cup-cappucino-fresh-coffee-beans-600nw-2473663083.jpg" alt="Капучино" >
+                <h3>Капучино</h3>
+                <p>1200₸</p>
+                <button class="open-modal" data-modal="modal1">Подробнее</button>
+            </div>
+
+            <div class="coffeeCard">
+             <img src="https://myeverydaytable.com/wp-content/uploads/AmericanoHotandIced-3.jpg" alt="Американо">
+                  <h3>Американо</h3>
+                  <p>900₸</p>
+                   <button class="open-modal" data-modal="modal2">Подробнее</button>
+            </div>
+
+            <div class="coffeeCard">
+              <img src="https://staresso.com/cdn/shop/articles/What_is_a_latte.jpg?v=1716606481" alt="Латте" >
+                  <h3>Латте</h3>
+                  <p>1100₸</p>
+                  <button class="open-modal" data-modal="modal3">Подробнее</button>
+              </div>
+          </div>
+
+          <div id="modal1" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Капучино</h2>
+                <p>Капучино — это итальянский кофейный напиток на основе эспрессо, горячего молока и молочной пены. Классический рецепт предусматривает равные пропорции этих трех компонентов, которые создают сбалансированный, насыщенный вкус и мягкую текстуру. Чтобы приготовить капучино, нужно смешать одну порцию эспрессо с подогретым вспененным молоком и густой молочной пенкой сверху.  ☕</p>
+              </div>
+            </div>
+
+          <div id="modal2" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Американо</h2>
+                <p>Американо — это напиток, состоящий из эспрессо, разбавленного горячей водой. Он появился, когда американские солдаты во время Второй мировой войны в Италии просили разбавить крепкий эспрессо, чтобы он был похож на привычный им фильтр-кофе. Крепость американо зависит от пропорций эспрессо и воды, и он отличается от других кофейных напитков, таких как фильтр-кофе и латте☕</p>
+              </div>
+            </div>
+
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Латте</h2>
+                <p>Латте — это кофейный напиток на основе эспрессо и большого количества тёплого молока с небольшим слоем пенки (\(~0,5\) см). Он имеет мягкий, молочный вкус, который особенно подходит тем, кто не любит слишком крепкий кофе. Объем напитка обычно составляет 250–300 мл.  ☕</p>
+              </div>
+            </div>
+          
+
+            <footer>
+  <p>© 2025 Beanology | Все права защищены</p>
+</footer>
+
+        <script src="modal.js"></script>
+
+        </body>
+        </html>
