@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  padding-bottom: 50px;
 }
 
 header {
@@ -80,7 +81,7 @@ section {
 
 .coffeeCard p {
   font-size: 0.95rem;
-  color: #5c4531;
+  color: #3a2a20;
   flex-grow: 1;
 }
 
@@ -93,6 +94,7 @@ section {
 
 .coffeeCard button {
   background-color: #B49286;
+  transition: background-color 0.2s ease, transform 0.2s ease;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -103,6 +105,7 @@ section {
 
 .coffeeCard button:hover {
   background-color: #d9b2a4;
+  transform: scale(1.05);
 }
 
 .modal {
@@ -130,4 +133,11 @@ section {
   top: 10px; right: 15px;
   font-size: 22px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 20px;
+  }
 }
