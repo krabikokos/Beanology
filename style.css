@@ -135,9 +135,43 @@ section {
   cursor: pointer;
 }
 
+/* Для телефонов до 480px (Realme, iPhone в портрете) */
+@media (max-width: 480px) {
+  header {
+    padding: 60px 15px;
+    font-size: 0.9rem;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .coffeeCard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .coffeeCard img {
+    height: 160px;
+  }
+}
+
+/* Для телефонов/планшетов до 768px */
 @media (max-width: 768px) {
   .menu-container {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    padding: 20px;
+    gap: 20px;
+  }
+
+  header {
+    padding: 80px 20px;
+  }
+}
+
+/* Для ноутов и планшетов (до 1024px) */
+@media (max-width: 1024px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
