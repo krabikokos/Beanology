@@ -10,6 +10,10 @@ body {
   padding-bottom: 50px;
 }
 
+body h2 {
+  text-align: center;
+}
+
 header {
   background: url('https://unocasa.com/cdn/shop/articles/types_of_coffee_91a828a5-7ff3-427d-acaa-c8b7289c9e5a_720x.jpg?v=1621261041') center/cover no-repeat;
   color: rgb(225, 225, 225);
@@ -184,6 +188,15 @@ section {
   font-size: 22px;
   cursor: pointer;
 }
+
+header {
+  background-image: url('https://unocasa.com/cdn/shop/articles/types_of_coffee_91a828a5-7ff3-427d-acaa-c8b7289c9e5a_720x.jpg?v=1621261041');
+  background-size: cover;
+  background-attachment: fixed; /* фиксирует фон */
+  background-position: center;
+  transition: background-position 0.1s linear;
+}
+
 
 /* Для телефонов до 480px (Realme, iPhone в портрете) */
 @media (max-width: 480px) {
