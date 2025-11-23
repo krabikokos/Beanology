@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
   background: #BFA89E;
   color: #2e2e2e;
   margin: 0;
@@ -15,19 +18,53 @@ body h2 {
 }
 
 header {
-  background: url('https://unocasa.com/cdn/shop/articles/types_of_coffee_91a828a5-7ff3-427d-acaa-c8b7289c9e5a_720x.jpg?v=1621261041') center/cover no-repeat;
-  color: rgb(225, 225, 225);
-  font-family: 'Poppins', sans-serif;
+  background: url('https://unocasa.com/cdn/shop/articles/types_of_coffee_91a828a5-7ff3-427d-acaa-c8b7289c9e5a_720x.jpg?v=1621261041') center/cover no-repeat ;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   padding: 100px 20px;
 }
 
+#main {
+  color: #2e2e2e;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  color: #2e2e2e;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#contact {
+  color: #2e2e2e;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
 #bookingForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+#bookingForm input,
+#bookingForm button {
+    padding: 12px 18px;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 form {
@@ -94,6 +131,11 @@ ul li a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
 }
 
 section {
@@ -198,6 +240,10 @@ header {
   transition: background-position 0.1s linear;
 }
 
+footer {
+  text-align: center;
+  font-weight: 800;
+}
 
 /* Для телефонов до 480px (Realme, iPhone в портрете) */
 @media (max-width: 480px) {
